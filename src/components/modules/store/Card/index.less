@@ -1,0 +1,60 @@
+@import 'vars.less';
+
+.store-card {
+  position: relative;
+  padding: 16px;
+  background-color: @background-color-30;
+  border-radius: 8px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &__image {
+      width: 96px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+    }
+  }
+
+  &__body {
+    margin-top: 30px;
+
+    &__company {
+      color: @primary-color-70;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__description {
+      margin-top: 16px;
+      color: @foreground-color-50;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+    &__user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__avatar {
+      width: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    &__username {
+      color: @primary-color-70
+    }
+  }
+}

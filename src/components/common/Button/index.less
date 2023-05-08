@@ -1,0 +1,62 @@
+@import "vars.less";
+
+@border-radius: 4px;
+
+.button {
+  background-color: @primary-color;
+  border: none;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  outline: none;
+  padding: 12px 64px;
+  border-radius: @border-radius;
+  font-weight: 700;
+  font-size: 16px;
+  color: @light-text-color;
+  cursor: pointer;
+
+  &--variant-outlined {
+    background-color: transparent;
+    border: 1px solid @primary-color-10;
+    color: @primary-color-70;
+    overflow: hidden;
+
+    &  svg {
+      fill: @primary-color-70;
+      color: @primary-color-70;
+    }
+    
+    &--state-active {
+      position: relative;
+      color: @light-text-color;
+
+      &  svg {
+        fill: @light-text-color;
+        color: @primary-color-70;
+      }
+
+      &::after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: @primary-color-10;
+      }
+    }
+  }
+
+  &--with-icon {
+    display: flex;
+    padding: 14px 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+
+

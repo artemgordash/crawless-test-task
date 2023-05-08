@@ -1,0 +1,53 @@
+@import 'vars.less';
+
+.feedback-carousel {
+  margin-top: 32px;
+
+  &__navigation--prev {
+    background-color: red;
+    width: 100px;
+    height: 300px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: @primary-color-70;
+    scale: 1.3;
+  }
+
+  &__pagination {
+    margin-top: 50px;
+  }
+
+  &__item {
+    margin: 0 200px;
+    border-radius: 16px;
+    padding: 64px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: @background-color-50;
+
+
+    &__feedback {
+      max-width: 560px;
+    }
+
+    &__position,
+    &__fullname {
+      color: @foreground-color-30;
+    }
+
+    &__fullname {
+      margin-top: 16px;
+    }
+
+    &__avatar {
+      margin-top: 32px;
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+    }
+  }
+}

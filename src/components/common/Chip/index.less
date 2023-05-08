@@ -1,0 +1,24 @@
+@import 'vars.less';
+
+.chip {
+  border: @background-color-70 solid 1px;
+  border-radius: 4px;
+  color: @foreground-color-30;
+  padding: 4px 16px;
+  text-align: center;
+
+  &--variant-filled {
+    background-color: @background-color-70;
+    color: @foreground-color-50;
+  }
+
+  &--with-icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    & svg {
+      fill: @foreground-color-50;
+    }
+  }
+}
