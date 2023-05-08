@@ -8,7 +8,7 @@ import { storeCards } from '@/components/modules/store/Store/static';
 const Store = () => {
 
   return (
-    <div className={'store'}>
+    <section className={'section store'}>
       <Typography
         Component={'p'}
         variant={'h2'}
@@ -27,7 +27,7 @@ const Store = () => {
         />)}
       </div>
       <Button className={'store__browse-more'}>Browser more in store...</Button>
-    </div>
+    </section>
   );
 };
 

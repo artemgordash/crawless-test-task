@@ -1,0 +1,71 @@
+@import 'vars.less';
+
+.footer {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 49px;
+
+  &__nav {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: space-between;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      &__description {
+        margin-bottom: 16px;
+      }
+
+      &__title {
+        margin: 4px 0;
+        padding: 4px 0;
+        color: @foreground-color-50;
+      }
+    }
+  }
+
+  &__notifications {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    &__policy {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+
+      &__description {
+        margin-left: 8px;
+        max-width: 200px;
+        color: @foreground-color-10;
+      }
+    }
+
+    &__form {
+      margin-top: 24px;
+      display: flex;
+
+      &__button {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+  
+      input {
+        background: @background-color-50;
+        border: none;
+        border-radius: 4px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 10px 16px;
+        color: @foreground-color-30;
+      }
+  
+      input:focus {
+        outline: 0;
+      }
+    }
+  }
+}

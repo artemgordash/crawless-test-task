@@ -1,0 +1,21 @@
+@import 'vars.less';
+
+.arrow-button {
+  padding: 16px 32px;
+  border: @foreground-color-10 solid 1px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    stroke: @foreground-color-10;
+  }
+
+  &--active {
+    border-color: @primary-color;
+
+    svg {
+      stroke: @primary-color;
+    }
+  }
+}

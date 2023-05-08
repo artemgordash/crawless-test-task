@@ -22,7 +22,7 @@ const WorkFlowCarousel = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <div className={'work-flow-carousel'}>
+    <section className={'section work-flow-carousel'}>
       <div className={'work-flow-carousel__controls'}>
         {workflowCarouselItems.map((item, index) => 
           <Button
@@ -72,7 +72,7 @@ const WorkFlowCarousel = () => {
           </SwiperSlide>,
         )}
       </Swiper>
-    </div>
+    </section>
   );
 };
 

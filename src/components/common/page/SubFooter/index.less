@@ -1,0 +1,39 @@
+@import 'vars.less';
+
+.sub-footer {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: @background-color-50 solid 1px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    
+    color: @foreground-color-50;
+    &__item {
+      font-size: 14px;
+    }
+
+    &__delimiter {
+      color: @foreground-color-10;
+    }
+  }
+
+  &__copyright {
+    color: @foreground-color-10;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 16px;
+  }
+}

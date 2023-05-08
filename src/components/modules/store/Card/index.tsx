@@ -1,10 +1,10 @@
+import DownloadIcon from '@/assets/download.svg';
+import WorkflowIcon from '@/assets/workflow.svg';
 import Chip from '@/components/common/Chip';
 import Divider from '@/components/common/Divider';
 import Typography from '@/components/common/Typography';
-import CompanyLogo from '@/components/common/icons/CompanyLogo';
-import DownloadIcon from '@/components/common/icons/Download';
-import './index.less';
 import { cl } from '@/utils/generateClasses';
+import './index.less';
 
 export interface IStoreCardProps {
   className?: string;
@@ -49,7 +49,7 @@ const StoreCard = ({
       <Divider />
       <div className={'store-card__body'}>
         <div className={'store-card__body__company'}>
-          <CompanyLogo />
+          <WorkflowIcon />
           <Typography variant={'body2'}>
             {company}
           </Typography>

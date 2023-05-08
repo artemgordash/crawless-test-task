@@ -1,6 +1,8 @@
 import Header from '@/components/common/page/Header';
 import { PropsWithChildren } from 'react';
 import './index.less';
+import Footer from '@/components/common/page/Footer';
+import SubFooter from '@/components/common/page/SubFooter';
 
 const MainLayout = ({ children }: PropsWithChildren) => {
 
@@ -10,6 +12,8 @@ const MainLayout = ({ children }: PropsWithChildren) => {
       <main className={'main'}>
         {children}
       </main>
+      <Footer />
+      <SubFooter />
     </div>
   );
 };

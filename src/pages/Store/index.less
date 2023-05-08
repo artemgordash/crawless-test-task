@@ -31,7 +31,7 @@
 
 .next-checkpoint {
   margin-top: 200px;
-  padding-left: 64px;
+  padding-left: 64px !important;
   border-radius: 8px;
   background-color: @background-color-30;
   display: flex;
@@ -106,5 +106,113 @@
 
   &__title {
     color: @foreground-color-70;
+  }
+
+  &__sponsors {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+  }
+}
+
+.stats {
+  margin-top: 110px;
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  background-color: @primary-color-10;
+
+  &__decoration {
+    position: absolute;
+    top: 0;
+  }
+
+  &__left-decoration {
+    left: 0;
+  }
+
+  &__right-decoration {
+    right: 0;
+  }
+
+  &__title {
+    max-width: 570px;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    max-width: 570px;
+    margin-top: 16px;
+  }
+
+  &__numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 48px;
+  }
+
+  &__ceil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+
+    &__title {
+      color: @primary-color-70
+    }
+  }
+
+  &__button {
+    align-self: center;
+    margin-top: 48px;
+    background-color: @lime-color-50;
+    color: @background-color-10;
+  }
+
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 110px;
+
+  &__card {
+    border: @background-color-50 1px solid;
+    border-radius: 8px;
+    padding: 64px 38px 64px 32px;
+    display: flex;
+    max-width: 580px;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+
+    &__head {
+      display: flex;
+      align-items: center;
+    }
+
+    &__title {
+      margin-left: 32px;
+    }
+
+    &__description {
+      margin-top: 16px;
+      max-width: 450px;
+      color: @foreground-color-50;
+    }
+
+    &__button {
+      margin-top: 32px;
+      color: @primary-color;
+    }
   }
 }

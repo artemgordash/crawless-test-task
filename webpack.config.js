@@ -17,7 +17,7 @@ module.exports = {
         liveReload: true,
     },
     resolve: {
-        extensions: ['.*', '.ts', '.tsx', '.js', '.jsx'],
+        extensions: ['.*', '.ts', '.tsx', '.js', '.jsx', '.svg'],
         alias: {
             root: __dirname,
             '@': path.resolve(__dirname, 'src/'),
@@ -38,7 +38,13 @@ module.exports = {
                             },
                         },
                     },
+
                 ],
+            },
+            {
+                test: /\.svg$/i,
+                issuer: /\.[jt]sx?$/,
+                use: ['@svgr/webpack'],
             },
             {
                 test: /\.(css)$/,

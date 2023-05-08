@@ -1,5 +1,5 @@
+import DeliveryIcon from '@/assets/delivery.svg';
 import Typography from '@/components/common/Typography';
-import DeliveryIcon from '@/components/common/icons/Delivery';
 import './index.less';
 
 const AdvantageCard = () => {

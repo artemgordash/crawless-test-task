@@ -15,6 +15,15 @@
   font-size: 16px;
   color: @light-text-color;
   cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &--disable-border-radius {
+    border-radius: 0;
+  }
 
   &--variant-outlined {
     background-color: transparent;
@@ -24,7 +33,17 @@
 
     &  svg {
       fill: @primary-color-70;
-      color: @primary-color-70;
+    }
+
+    &::after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: @primary-color-10;
     }
     
     &--state-active {
@@ -33,10 +52,10 @@
 
       &  svg {
         fill: @light-text-color;
-        color: @primary-color-70;
       }
 
       &::after {
+        transition: .3s;
         z-index: -1;
         content: '';
         position: absolute;

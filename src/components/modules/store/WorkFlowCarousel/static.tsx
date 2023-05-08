@@ -1,6 +1,6 @@
-import DownloadIcon from '@/components/common/icons/Download';
 import DevelopmentIllustration from '@/components/modules/store/DevelopmentIllustration';
 import { ICarouselWorkflowItem } from '@/components/modules/store/WorkFlowCarousel';
+import DownloadIcon from '@/assets/download.svg';
 
 export const workflowCarouselItems: ICarouselWorkflowItem[] = [
   {
