@@ -65,10 +65,20 @@
     &__form {
       margin-top: 24px;
       display: flex;
+      align-self: stretch;
+    
+      @media @sm {
+        gap: 12px;
+        flex-direction: column;
+      }
 
       &__button {
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
+
+        @media @sm {
+          border-radius: 8px;
+        }
       }
   
       input {
@@ -79,6 +89,10 @@
         border-bottom-right-radius: 0;
         padding: 10px 16px;
         color: @foreground-color-30;
+
+        @media @sm {
+          border-radius: 8px;
+        }
       }
   
       input:focus {
