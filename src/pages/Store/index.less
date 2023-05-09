@@ -222,21 +222,37 @@
 
   &__left-decoration {
     left: 0;
+
+    @media @sm {
+      left: calc(10vw - 270px);
+    }
   }
 
   &__right-decoration {
     right: 0;
+
+    @media @sm {
+      right: calc(10vw - 270px);
+    }
   }
 
   &__title {
     max-width: 570px;
     margin: 0 auto;
+
+    @media @sm {
+      max-width: 300px;
+    }
   }
 
   &__subtitle {
     margin: 0 auto;
     max-width: 570px;
     margin-top: 16px;
+    
+    @media @sm {
+      max-width: 300px;
+    }
   }
 
   &__numbers {
@@ -247,7 +263,8 @@
     gap: 32px;
 
     @media @sm {
-      align-self: start;
+      width: 100%;
+      max-width: 300px;
       grid-template-columns: repeat(2, 1fr);
       gap: 64px;
     }
@@ -256,8 +273,12 @@
   &__ceil {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 6px;
+    align-items: center;
+
+    @media @sm {
+      align-items: start;
+    }
 
     &__title {
       color: @primary-color-70;
