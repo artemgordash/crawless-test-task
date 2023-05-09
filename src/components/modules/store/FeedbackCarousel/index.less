@@ -5,6 +5,12 @@
   display: flex;
   align-items: center;
 
+  .arrow-button {
+    @media @sm {
+      display: none;
+    }
+  }
+
   .swiper {
     padding-bottom: 50px !important;
 }
@@ -31,6 +37,11 @@
     align-items: center;
     text-align: center;
     background-color: @background-color-50;
+
+    @media @sm {
+      margin: 0;
+    }
+      
 
 
     &__feedback {

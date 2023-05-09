@@ -6,9 +6,21 @@
   justify-content: center;
   flex-direction: column;
   gap: 32px;
+  margin-top: 68px;
+
+  @media @sm {
+    margin-top: 24px;
+  }
 
   &__logo {
-    margin: 64px auto 0;
+    align-self: center;
+
+    @media @sm {
+      text-align: start;
+      align-self: start;
+      margin: 0;
+      margin-top: 64px;
+    }
   }
 
   &__subtitle {
@@ -16,33 +28,57 @@
     max-width: 500px;
     text-align: center;
     margin-top: 10px;
+
+    @media @sm {
+      text-align: start;
+    }
   }
 
   &__title {
     margin-top: 25px;
     text-align: center;
     max-width: 900px;
-  }
-}
 
-.work-flow-carousel {
-  margin-top: 120px;
+    @media @sm {
+      font-weight: 400;
+      text-align: start;
+    }
+  }
 }
 
 .next-checkpoint {
   margin-top: 200px;
-  padding-left: 64px !important;
+  padding-left: 64px;
   border-radius: 8px;
   background-color: @background-color-30;
   display: flex;
   justify-content: space-between;
 
+  @media @sm {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+  }
+
   &__info {
     margin-top: 64px;
     display: flex;
+    padding-bottom: 100px;
     align-items: start;
     flex-direction: column;
     max-width: 600px;
+
+    @media @md {
+      max-width: 300px;
+    }
+
+    @media @sm {
+      align-items: stretch;
+      max-width: 100%;
+      padding-bottom: 64px;
+    }
 
     &__title {
       color: @foreground-color-70;
@@ -60,21 +96,41 @@
 
     &__button {
       margin-top: 128px;
+
+      @media @md {
+        margin-top: 64px;
+      }
     }
+
+  }
+
+  &__illustration {
+    padding-top: 10px;
+    padding-right: 10px;
   }
 }
 
 .possibilities {
   margin-top: 160px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+
+  @media @sm {
+    justify-content: start;
+    align-items: start;
+  }
 
   &__info {
     text-align: center;
     flex-direction: column;
     max-width: 670px;
+
+    @media @sm {
+      text-align: start;
+    }
+
     &__subtitle {
       color: @foreground-color-50;
     }
@@ -84,7 +140,11 @@
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 32px;
+    gap: 32px;
+
+    @media @sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -109,28 +169,53 @@
   }
 
   &__sponsors {
+    padding: 0 200px;
     margin-top: 48px;
-    display: flex;
-    justify-content: center;
-    gap: 64px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+    justify-items: center;
+
+
+    & svg {
+      width: 64px;
+      height: 64px;
+    }
+
+    @media @sm {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 40px;
+    }
   }
 }
 
 .stats {
   margin-top: 110px;
   position: relative;
-  padding-top: 64px;
-  padding-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  text-align: center;
-  justify-content: center;
   background-color: @primary-color-10;
+  overflow: hidden;
+
+  &__content {
+    padding: 100px 64px 100px 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    justify-content: center;;
+
+    * {
+      z-index: 1;
+    }
+
+    @media @sm {
+      text-align: start;
+    }
+  }
 
   &__decoration {
     position: absolute;
     top: 0;
+    height: 100%;
   }
 
   &__left-decoration {
@@ -153,11 +238,17 @@
   }
 
   &__numbers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 32px;
-    gap: 48px;
+    gap: 32px;
+
+    @media @sm {
+      align-self: start;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 64px;
+    }
   }
 
   &__ceil {
@@ -167,7 +258,12 @@
     gap: 6px;
 
     &__title {
-      color: @primary-color-70
+      color: @primary-color-70;
+
+      @media @sm {
+        align-self: start;
+        margin-left: 6px;
+      }
     }
   }
 
@@ -177,13 +273,18 @@
     background-color: @lime-color-50;
     color: @background-color-10;
   }
-
 }
 
 .features {
   display: flex;
   justify-content: space-around;
   margin-top: 110px;
+  gap: 24px;
+
+  @media @sm {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
 
   &__card {
     border: @background-color-50 1px solid;

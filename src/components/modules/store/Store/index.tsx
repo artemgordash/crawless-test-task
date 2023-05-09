@@ -18,7 +18,7 @@ const Store = () => {
         Start using bots in your projects right now
       </Typography>
       <div className={'store__categories'}>
-        {[...new Array(13)].map((_, index) => <Chip key={index}>Entertainment</Chip>)}
+        {[...new Array(7)].map((_, index) => <Chip key={index}>Entertainment</Chip>)}
       </div>
       <div className={'store__cards'}>
         {storeCards.map((card, index) => <StoreCard

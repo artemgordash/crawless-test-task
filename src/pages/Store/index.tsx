@@ -1,8 +1,8 @@
 import CrawlessIcon from '@/assets/crawless.svg';
+import SponsorLogo from '@/assets/sponsor.svg';
+import StoreIllustration from '@/assets/store-illustration.svg';
 import Button from '@/components/common/Button';
 import Typography from '@/components/common/Typography';
-import SponsorLogo from '@/components/common/icons/SponsorLogo';
-import StoreIllustration from '@/components/common/illustrations/Store';
 import AdvantageCard from '@/components/modules/store/AdvantageCard';
 import FeedbackCarousel from '@/components/modules/store/FeedbackCarousel';
 import StoreLogo from '@/components/modules/store/Logo';
@@ -71,10 +71,10 @@ const StorePage = () => {
               Contact us
             </Button>
           </div>
-          <StoreIllustration />
+          <StoreIllustration className={'next-checkpoint__illustration'} />
         </div>
       </section>
-      <div className={'possibilities'}>
+      <div className={'section possibilities'}>
         <div className={'possibilities__info'}>
           <Typography
             Component={'p'}
@@ -125,89 +125,90 @@ const StorePage = () => {
           <SponsorLogo />
           <SponsorLogo />
           <SponsorLogo />
-          <SponsorLogo />
         </div>
       </section>
       <section className={'section section--disable-padding'}>
         <div className={'stats'}>
-          <Typography
-            className={'stats__title'}
-            variant={'h2'}
-          >
-            Build web automation bots
-            faster then ever using crawless
-          </Typography>
-          <Typography
-            weight={'light'}
-            className={'stats__subtitle'}
-            variant={'subtitle2'}
-          >
-            Join the community of developers from all over the world that rely on crawless
-          </Typography>
+          <div className={'stats__content'}>
+            <Typography
+              className={'stats__title'}
+              variant={'h2'}
+            >
+              Build web automation bots
+              faster then ever using crawless
+            </Typography>
+            <Typography
+              weight={'light'}
+              className={'stats__subtitle'}
+              variant={'subtitle2'}
+            >
+              Join the community of developers from all over the world that rely on crawless
+            </Typography>
 
-          <div className={'stats__numbers'}>
-            <div className={'stats__ceil'}>
-              <Typography
-                variant={'h3'}
-                className={'stats__ceil__content'}
-              >
-                1313
-              </Typography>
-              <Typography
-                weight={'bold'}
-                variant={'body2'}
-                className={'stats__ceil__title'}
-              >
-                Bots
-              </Typography>
+            <div className={'stats__numbers'}>
+              <div className={'stats__ceil'}>
+                <Typography
+                  variant={'h3'}
+                  className={'stats__ceil__content'}
+                >
+                  1313
+                </Typography>
+                <Typography
+                  weight={'bold'}
+                  variant={'body2'}
+                  className={'stats__ceil__title'}
+                >
+                  Bots
+                </Typography>
+              </div>
+              <div className={'stats__ceil'}>
+                <Typography
+                  variant={'h3'}
+                  className={'stats__ceil__content'}
+                >
+                  1313
+                </Typography>
+                <Typography
+                  weight={'bold'}
+                  variant={'body2'}
+                  className={'stats__ceil__title'}
+                >
+                  Bots
+                </Typography>
+              </div>
+              <div className={'stats__ceil'}>
+                <Typography
+                  variant={'h3'}
+                  className={'stats__ceil__content'}
+                >
+                  1313
+                </Typography>
+                <Typography
+                  weight={'bold'}
+                  variant={'body2'}
+                  className={'stats__ceil__title'}
+                >
+                  Bots
+                </Typography>
+              </div>
+              <div className={'stats__ceil'}>
+                <Typography
+                  variant={'h3'}
+                  className={'stats__ceil__content'}
+                >
+                  1313
+                </Typography>
+                <Typography
+                  weight={'bold'}
+                  variant={'body2'}
+                  className={'stats__ceil__title'}
+                >
+                  Bots
+                </Typography>
+              </div>
             </div>
-            <div className={'stats__ceil'}>
-              <Typography
-                variant={'h3'}
-                className={'stats__ceil__content'}
-              >
-                1313
-              </Typography>
-              <Typography
-                weight={'bold'}
-                variant={'body2'}
-                className={'stats__ceil__title'}
-              >
-                Bots
-              </Typography>
-            </div>
-            <div className={'stats__ceil'}>
-              <Typography
-                variant={'h3'}
-                className={'stats__ceil__content'}
-              >
-                1313
-              </Typography>
-              <Typography
-                weight={'bold'}
-                variant={'body2'}
-                className={'stats__ceil__title'}
-              >
-                Bots
-              </Typography>
-            </div>
-            <div className={'stats__ceil'}>
-              <Typography
-                variant={'h3'}
-                className={'stats__ceil__content'}
-              >
-                1313
-              </Typography>
-              <Typography
-                weight={'bold'}
-                variant={'body2'}
-                className={'stats__ceil__title'}
-              >
-                Bots
-              </Typography>
-            </div>
+            <Button className={'stats__button'}>Get started now</Button>
           </div>
-          <Button className={'stats__button'}>Get started now</Button>
           <StatsLeftDecorations className={'stats__decoration stats__left-decoration'} />
           <StatsRightDecorations className={'stats__decoration stats__right-decoration'} />
         </div>

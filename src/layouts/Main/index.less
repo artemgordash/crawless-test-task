@@ -1,7 +1,13 @@
+@import 'vars.less';
+
 .main {
 
   .section {
     padding: 0 48px;
+
+    @media @sm {
+      padding: 0 16px;
+    }
 
     &--disable-padding {
       padding: 0;

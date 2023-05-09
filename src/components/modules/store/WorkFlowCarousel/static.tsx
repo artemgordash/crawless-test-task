@@ -1,4 +1,4 @@
-import DevelopmentIllustration from '@/components/modules/store/DevelopmentIllustration';
+import DevelopmentIllustration from '@/assets/development-illustration.svg';
 import { ICarouselWorkflowItem } from '@/components/modules/store/WorkFlowCarousel';
 import DownloadIcon from '@/assets/download.svg';
 

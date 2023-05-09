@@ -6,10 +6,10 @@ import './index.less';
 const Header = () => {
 
   return (
-    <header className={'header flex items-center justify-between'}>
+    <header className={'header'}>
       <Logo />
       <Navbar />
-      <Button>Try for free</Button>
+      <Button className={'header__button'}>Try for free</Button>
     </header>
   );
 };

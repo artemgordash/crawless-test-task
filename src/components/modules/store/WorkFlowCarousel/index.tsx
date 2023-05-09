@@ -1,6 +1,6 @@
+import DevelopmentIllustration from '@/assets/development-illustration.svg';
 import Button, { IButtonProps } from '@/components/common/Button';
 import Typography from '@/components/common/Typography';
-import DevelopmentIllustration from '@/components/modules/store/DevelopmentIllustration';
 import { workflowCarouselItems } from '@/components/modules/store/WorkFlowCarousel/static';
 import { cl } from '@/utils/generateClasses';
 import { useState } from 'react';

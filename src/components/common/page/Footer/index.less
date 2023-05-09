@@ -4,12 +4,23 @@
   margin-top: 64px;
   display: flex;
   justify-content: space-between;
-  padding: 80px 49px;
+
+  @media @sm {
+    flex-direction: column;
+  }
 
   &__nav {
-    display: flex;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    display: grid;
     flex-basis: 60%;
-    justify-content: space-between;
+    grid-template-columns: repeat(5, 1fr);
+
+    @media @sm {
+      justify-content: space-between;
+      row-gap: 40px;
+      grid-template-columns: repeat(3, 1fr);
+    }
 
     &__item {
       display: flex;
@@ -30,15 +41,22 @@
   &__notifications {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    padding-top: 64px; 
+    padding-right: 96px;
+
+    @media @sm {
+      align-items: center;
+      border-top: @background-color-50 solid 1px;
+      padding: 64px 18px;
+    }
     
     &__policy {
-      margin-top: 14px;
+      margin-top: 28px;
       display: flex;
       align-items: center;
 
       &__description {
-        margin-left: 8px;
+        margin-left: 16px;
         max-width: 200px;
         color: @foreground-color-10;
       }

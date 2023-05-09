@@ -1,6 +1,19 @@
+@import 'vars.less';
+
 .header {
   padding: 16px 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+
+  @media @sm {
+    padding: 20px 16px;
+  }
+
+  &__button {
+    @media @sm {
+      display: none;
+    }
+  }
 }

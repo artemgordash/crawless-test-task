@@ -7,10 +7,19 @@
   justify-content: space-between;
   border-top: @background-color-50 solid 1px;
 
+  @media @sm {
+    flex-direction: column-reverse;
+  }
+
   &__content {
     display: flex;
     align-items: center;
     gap: 32px;
+
+    @media @sm {
+      flex-direction: column;
+      margin-top: 32px;
+    }
   }
   
   &__info {
